@@ -1,0 +1,595 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: #333;
+  line-height: 1.6;
+  font-family: Poppins;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+.header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  padding: 15px 18px 15px 25px;
+}
+
+.spotify-icon-container {
+  display: flex;
+  align-items: center;
+  margin: 0 150px 0 0;
+  background-color: red;
+}
+
+.spotify-logo {
+  height: 35px;
+  width: 35px;
+}
+
+.home-icon {
+  color: white;
+  height: 20px;
+  width: 20px;
+  background-color: #2E3234;
+}
+
+.home-icon-container {
+  background-color: #2E3234;
+  border-radius: 50%;
+  padding: 11px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-icon-container:hover {
+    background-color: #1f1f1f;
+}
+
+.home-icon-container:hover .home-icon {
+  height: 23px;
+  width: 23px;
+  background-color: #1f1f1f;
+}
+
+.home-search-container{
+    display: flex;
+    align-items: center;
+}
+
+.search-container{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #2E3234;
+    border-radius: 50px;
+    width: 450px;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    padding: 4px;
+    transition: transform 0.3s ease; 
+}
+
+.search-logo{
+    height: 30px;
+    width: 30px;
+    margin-right: 12px;
+    margin-left: 6px;
+    background-color: transparent;
+    fill: white;
+}
+
+.search-input{
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Arial',sans-serif;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+.search-container hr{
+    height: 20px;
+}
+
+.library-icon{
+    background-color: transparent;
+    color: #b3b3b3;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.search-container:hover{
+    border: 2px solid #2E3234;
+    padding: 2px;
+    background-color: #1f1f1f;
+    margin-left: 11px;
+}
+
+.signup-login-container{
+    display: flex;
+}
+
+.signup-login-container button{
+    all: unset;
+}
+
+.signup-container{
+    padding: 6px 20px 6px 2px;
+    border-radius: 18px;
+    font-weight: 500;
+    color: #afafaf;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signup-container:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+.login-container{
+    background-color: white;
+    padding: 6px 20px 6px 20px;
+    border-radius: 18px;
+    font-weight: 500; 
+    margin-left: 6px; 
+    cursor: pointer;
+    color: black;
+    font-weight: 550;
+}
+
+.login-container:hover{
+    transform: scale(1.05);
+    background-color: #e2e5de;
+}
+
+.main-page-container{
+    padding: 0 8px 0 8px;
+    display: flex;
+}
+
+.leftpanel{
+    background-color: #121212;
+    min-height: calc(100vh - 90px);
+    height: 100%;
+    min-width: 24%;
+    border-radius: 8px;
+    margin-right: 8px;
+    padding: 12px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightpanel{
+    background: linear-gradient(to bottom, #222222, #121212);
+    /* background-color: #121212; */
+    height: 90vh;
+    width: 72vw;
+    border-radius: 8px;
+    height: 100%;
+    max-height: calc(100vh - 88px);
+    padding: 8px 22px 8px 22px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.library-container{
+    padding: 8px 12px 8px 12px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.leftpanel-top{
+    background-color: transparent;
+}
+
+.library-container-icon-text{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.library-container p{
+    background-color: transparent;
+    font-weight: 600;
+    color: #aeb2ba;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.your-library{
+    height: 23px;
+    width: 23px;
+}
+
+.plus-icon{
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 100;
+    color: #aeb2ba;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.plus-icon:hover{
+    background-color: #212121;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.leftpanel-subcontainer{
+    padding: 15px;
+    background-color: #1F1F1F;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.leftpanel-subcontainer h2{
+    background-color: transparent;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.leftpanel-subcontainer p{
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.leftpanel-subcontainer button{
+    all: unset;
+    background-color: white;
+    padding: 4px 16px 4px 16px;
+    border-radius: 18px; 
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.leftpanel-subcontainer button:hover{
+    transform: scale(1.05);
+    background-color: #e2e5de;
+} 
+
+.leftpanel-footer {
+    background-color: transparent;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-bottom: 60px;
+}
+
+.leftpanel-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; 
+    margin-bottom: 10px; 
+    background-color: transparent;
+}
+
+.leftpanel-footer a {
+    color: #ccc; 
+    text-decoration: none;
+    font-size: 11px;
+    transition: color 0.3s ease;
+    background-color: transparent;
+}
+
+.leftpanel-footer a:hover {
+    color: white; 
+    background-color: transparent;
+
+}
+
+#leftpanel-footer-cookie{
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+#leftpanel-footer-cookie:hover{
+    text-decoration: underline;
+}
+
+.leftpanel-footer-button-container{
+    background-color: transparent;
+}
+
+.leftpanel-footer-button-container button:hover{
+    border: 1px solid white;
+    transform: scale(1.04);
+}
+
+.leftpanel-footer-button-container i{
+    margin-right: 4px;
+    background-color: transparent;
+}
+
+.leftpanel-footer-button-container button{
+    all: unset;
+    border: 1px solid #afafaf;
+    background-color: black;
+    padding: 4px 12px 4px 12px;
+    border-radius: 18px; 
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: 16px 0 16px 0;
+}
+
+.rightpanel-title{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rightpanel-title h1{
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rightpanel-title h1:hover{
+    text-decoration: underline;
+}
+
+.rightpanel-title p{
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.rightpanel-title p:hover{
+    text-decoration: underline;
+}
+
+
+.playlist{
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+
+.playlist-container{
+    background-color: transparent;
+    min-height: 226px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.playlist-item{
+    position: relative;
+    background-color: transparent;
+    width: 160px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: 8px;
+    margin-right: 4px;
+}
+
+.playlist-item:hover{
+    background-image: linear-gradient(to bottom, transparent, #222222);
+}
+
+#artist-playlist-item{
+    border-radius: 50%;
+    background-color: red;
+}
+
+.playlist-item img{
+    border-radius: 5px;
+    width: 100%;
+    height: 160px;
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.playlist-item h5{
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 16px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.playlist-item h5:hover{
+    text-decoration: underline;
+}
+
+.playlist-item p{
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 14px;
+    color: #AEAEAE;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.play-icon{
+    position: absolute;
+    bottom: 70px; 
+    right: 8px; 
+    font-size: 44px; 
+    color: #ffffff; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    background-color: #1ED760;
+    border-radius: 50%;
+    padding: 20px;
+    height: 10px;
+    width: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.playlist-item:hover .play-icon {
+    opacity: 1; /* Make the icon visible */
+}
+
+.play-icon i{
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+
+.play-icon:hover{
+    background-color: #1eb569;
+    transform: scale(1.02);
+}
+
+.right-panel-footer{
+    background-color: transparent;
+}
+
+.footer1-container{
+    margin-top: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-sub-container{
+    background-color: transparent;
+}
+
+.footer-sub-container h1{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.footer-sub-container ul li{
+    font-size: 16px;
+    font-weight: normal;
+    background-color: transparent;
+    list-style-type: none;
+    color: #ccc;
+    margin-bottom: 6px;
+}
+
+.footer-sub-container ul{
+    background-color: transparent;
+}
+
+.footer-sub-container ul li:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-icons-container{
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.footer-icons-container i{
+    background-color: #2E3234;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.footer-icons-container i:hover{
+    background-color: #aeb2ba;
+}
+
+.styled-hr{
+    background-color: grey;
+    margin-bottom: 20px;
+    height: 0.5px;
+    border: none;
+}
+
+.right-panel-footer p{
+    background-color: transparent;
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+.signin-banner{
+    background: linear-gradient(to right, #AE2896, #519AF4);
+    padding: 11px 24px 7px 15px;            
+    position: fixed;             
+    bottom: 0;                   
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+
+.signin-banner div{
+    background-color: transparent;
+}
+
+.signin-banner div h2{
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.signin-banner div p{
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.signin-banner button{
+    all:initial;
+    background-color: transparent;
+    margin-right: 50px;
+    padding: 15px 35px 15px 35px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: roboto;
+    text-align: center;
+}
+
+.signin-banner button:hover{
+    transform: scale(1.05);
+    background-color: #ccc;
+}
